@@ -11,7 +11,7 @@ before_install:
 
 
 Script:
-  - docker run prashantwalunj999/docker_react -- --coverage
+  - docker run prashantwalunj999/docker_react
 
 deploy:
   provider: elasticbeanstalk
