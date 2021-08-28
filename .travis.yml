@@ -7,11 +7,11 @@ services:
 
 
 before_install:
-  - docker build -t prashantwalunj999/docker_react .
+  - docker build -t prashantwalunj999/docker_react -f Dockerfile.dev .
 
 
 Script:
-  - docker run prashantwalunj999/docker_react
+  - docker run prashantwalunj999/docker_react npm run test -- --coverage
 
 deploy:
   provider: elasticbeanstalk
